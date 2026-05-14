@@ -1,4 +1,10 @@
 import os
+# Impede conflitos do OpenMP no Windows
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
+
+# Previne o crash silencioso em C++
+import sklearn
+
 import ast
 import pickle
 import faiss
@@ -21,6 +27,7 @@ print("Modelo carregado!")
 # DATASET
 # ==========================================
 
+# Confirme se a pasta "data" e o arquivo json estão com esse nome exato
 dataset_path = "data/dataset_secretaria_virtual_5000.json"
 
 texts = []
