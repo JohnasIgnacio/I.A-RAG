@@ -1,0 +1,14 @@
+{
+  "n_amostras": 10,
+  "metricas": {
+    "answer_similarity": 0.7958,
+    "context_precision": 0.7206,
+    "context_recall": 0.724,
+    "faithfulness_proxy": 0.8074,
+    "bertscore_precision": 0.8584,
+    "bertscore_recall": 0.8631,
+    "bertscore_f1": 0.8607,
+    "rouge_l": 0.543
+  },
+  "ragas_score": 0.7599
+}
